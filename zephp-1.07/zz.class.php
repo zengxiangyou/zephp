@@ -1,6 +1,7 @@
 <?php
 /**
  Copyright (C) 2015-2019 Zengxiangyou. All Rights Reserved.
+ Licensed http://license.coscl.org.cn/MulanPSL2
  @link: http://www.zephp.com/
  @author: zengxy.com 1559261757@qq.com
  @final: 2019-01-13
