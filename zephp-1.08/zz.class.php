@@ -1,12 +1,12 @@
 <?php
 /**
- Copyright (C) 2015-2020 Zengxiangyou. All Rights Reserved.
- Licensed http://license.coscl.org.cn/MulanPSL2
- @link: http://www.zephp.com/
- @author: zengxy.com 1559261757@qq.com
- @final: 2020-08-27
- @todo: The core of the all.
-*/
+ * Copyright (C) 2015-2021 Zengxiangyou, All Rights Reserved.
+ * Licensed http://license.coscl.org.cn/MulanPSL2
+ * @link    http://www.zephp.com/
+ * @author  zengxy.com <1559261757@qq.com>
+ * @final   2021-06-03
+ * @todo    The core of the all.
+ */
 
 error_reporting(E_ALL & ~E_NOTICE);
 header('Content-Type:text/html;charset=UTF-8');
