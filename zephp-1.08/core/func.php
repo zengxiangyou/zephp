@@ -102,3 +102,9 @@ function _len($str, $encode = 'UTF-8'){
     return mb_strlen($str, $encode);
 }
 
+//包含
+function _on($str, $k){
+    if (function_exists('str_contains')) return $k != '' && str_contains($str, $k);
+    return $k != '' && mb_strpos($str, $k) !== false;
+}
+
