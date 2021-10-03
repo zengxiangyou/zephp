@@ -79,7 +79,8 @@ function _cookie ($nick, $val = NULL, $expire = 0, $path = '', $domain = '', $se
 
 //解码json
 function _json ($str) {
-    return $str != '' ? json_decode($str . '', true) : array();
+    $jn = json_decode($str . '', true);
+    return $jn && is_array($jn) ? $jn : array();
 }
 
 //编码json
