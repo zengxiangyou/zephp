@@ -7,8 +7,8 @@
 */
 
 //伪链接转换
-function z1_common_urlGet(){
-    $url = $_SERVER['QUERY_STRING'];
+function z1_common_urlGet($url = ''){
+    if ($url == '') $url = $_SERVER['QUERY_STRING'];
     if ($url != '' && preg_match('/^([\w\-\.\/\%]+)($|\&|\=)/i', $url, $m)) {
         $url = urldecode($m[1]);
         $dot = strrpos($url, '.');
