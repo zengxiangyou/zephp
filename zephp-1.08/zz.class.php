@@ -1,10 +1,10 @@
 <?php
 /**
- * Copyright (C) 2015-2021 Zengxiangyou, All Rights Reserved.
+ * Copyright (C) 2015-2022 Zengxiangyou, All Rights Reserved.
  * Licensed http://license.coscl.org.cn/MulanPSL2
  * @link    http://www.zephp.com/
  * @author  zengxy.com <1559261757@qq.com>
- * @final   2021-06-03
+ * @final   2022-04-18
  * @todo    The core of the all.
  */
 
@@ -17,9 +17,11 @@ class zz {
 	
 	private static $obj = NULL;
 	private static $_obj = FALSE;
+	
 	public static $rewrite = 0;
 	public static $pass = 0;
 	public static $local = 0;
+	public static $debug = 0;
 	
 	public $dataArr = array();
 	public $phpArr = array();
