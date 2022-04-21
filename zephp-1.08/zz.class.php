@@ -11,7 +11,7 @@
 error_reporting(E_ALL & ~E_NOTICE);
 header('Content-Type:text/html;charset=UTF-8');
 date_default_timezone_set('PRC');
-define('zzROOT', dirname(__FILE__) . '/');
+define('zzROOT', __DIR__ . '/');
 
 class zz {
 	
