@@ -40,7 +40,7 @@ class z_core_func_curl {
 					    $msg = curl_exec($ch);
 					    if ($msg) {
 					        curl_close($ch);
-					        return $msg;
+					        return trim($msg);
 					    }
 //     					echo curl_error($ch);
 //     					var_dump(curl_getinfo($ch));
@@ -55,7 +55,8 @@ class z_core_func_curl {
 							)
 						);
 						$context = stream_context_create($opts);
-						return file_get_contents($url, false, $context);
+						$msg = file_get_contents($url, false, $context);
+						return trim($msg);
 					}
 				}
 			} else {
@@ -92,7 +93,7 @@ class z_core_func_curl {
 			            $msg = curl_exec($ch);
 			            if ($msg) {
 			                curl_close($ch);
-			                return $msg;
+			                return trim($msg);
 			            }
 //     				    echo curl_error($ch);
 //     				    var_dump(curl_getinfo($ch));
