@@ -31,7 +31,7 @@ function z1_common_memcached ($key = '', $value = NULL, $timeout = 1800, $prefix
                 if (!empty($option)) $opt = $option + $opt;
                 if (!$m->setOptions($opt)) return false;
                 if (empty($server)) {
-                    if (!$m->addServer('localhost', 11211)) return false;
+                    if (!$m->addServer('127.0.0.1', 11211)) return false;
                 } else {
                     $svs = array();
                     foreach ($server as $s) {
