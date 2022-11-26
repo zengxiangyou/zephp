@@ -27,9 +27,14 @@ function _isId ($i) {
 	return (is_string($i) || is_numeric($i)) ? preg_match('/^\d+$/', $i) : false;
 }
 
+//是否id组
+function _isIds ($i) {
+    return (is_string($i) || is_numeric($i)) ? preg_match('/^[\d\,]+$/', $i) : false;
+}
+
 //是否安全字符
 function _isW($k){
-    return (is_string($k) || is_numeric($k)) ? preg_match('/^[a-z0-9_\.\,]+$/i', $k) : false;
+    return (is_string($k) || is_numeric($k)) ? preg_match('/^[a-z0-9_\.\,\-]+$/i', $k) : false;
 }
 
 //post
