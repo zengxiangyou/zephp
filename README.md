@@ -1,7 +1,7 @@
 # ZePHP
 网站开发核心框架（ Website core ）
 
-# Once including, get everything.
+# The core of the all.
 include 'zephp/zz.class.php';
 
 # Document
