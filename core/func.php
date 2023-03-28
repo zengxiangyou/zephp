@@ -49,7 +49,7 @@ function _get ($n) {
 
 //简单过滤
 function _key ($str) {
-    return preg_replace('/\s+|\'|\"|\*|\;|\\\\|\%|\<|\>/isU', '', $str);
+    return preg_replace('/\'|\"|\*|\;|\\\\|\%|\<|\>/isU', '', $str);
 }
 
 //去引号
