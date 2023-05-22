@@ -109,7 +109,8 @@ function _len($str, $encode = 'UTF-8'){
 }
 
 //包含
-function _on($str, $k){
+function _on($str, $k = ''){
+    if (is_array($str)) return in_array($k, $str);
     if (function_exists('str_contains')) return $k != '' && str_contains($str, $k);
     return $k != '' && mb_strpos($str, $k) !== false;
 }
